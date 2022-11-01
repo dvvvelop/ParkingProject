@@ -1,7 +1,6 @@
 package com.example.forevgeniy.controller;
 
 
-import com.example.forevgeniy.dao.entities.StatsResponse;
 import com.example.forevgeniy.dao.entities.User;
 import com.example.forevgeniy.dao.entities.UserProfileLogin;
 import com.example.forevgeniy.dao.entities.UserProfileRegister;
@@ -56,10 +55,6 @@ public class UserController {
         return "redirect:/index";
     }
 
-    @GetMapping("/exittt")
-    public StatsResponse login() {
-        return new StatsResponse();
-    }
 
     @PostMapping("/checkRegister")
     public boolean register(HttpServletResponse response, @RequestBody UserProfileRegister userProfileRegister){
